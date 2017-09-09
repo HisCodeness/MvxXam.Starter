@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<d:MvxContentPage x:TypeArguments="viewModels:MainViewModel"
+     xmlns="http://xamarin.com/schemas/2014/forms"
+     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+     xmlns:local="clr-namespace:MvxForms.Core"
+     x:Class="MvxXam.Starter.App.Views.MainPage"
+     xmlns:viewModels="clr-namespace:MvxXam.Starter.ViewModels"
+     xmlns:d="clr-namespace:MvvmCross.Forms.Core;assembly=MvvmCross.Forms">
+    <StackLayout VerticalOptions="Center">
+        <Entry Text="{Binding Text}" Margin="20"/>
+        <Button Command="{Binding ResetTextCommand}" Text="Click me" Margin="20"/>
+        <Button Command="{Binding NextCommand}" Text="Go next" Margin="20"/>
+        <Label Text="{Binding Time, Mode=OneWay}" Margin="20"/>
+    </StackLayout>
+
+
+</d:MvxContentPage>
