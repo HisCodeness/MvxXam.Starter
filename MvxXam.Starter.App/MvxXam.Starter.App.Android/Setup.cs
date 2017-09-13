@@ -35,7 +35,7 @@ namespace MvxXam.Starter.App.Droid
         /// <returns></returns>
         protected override IMvxAndroidViewPresenter CreateViewPresenter()
         {
-            var presenter = new MvxAndroidViewPresenter();
+            var presenter = new MvxAndroidViewPresenter(AndroidViewAssemblies);
             Mvx.RegisterSingleton<IMvxViewPresenter>(presenter);
 
             return presenter;

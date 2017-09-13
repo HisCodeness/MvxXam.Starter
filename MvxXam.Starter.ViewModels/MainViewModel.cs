@@ -50,10 +50,13 @@ namespace MvxXam.Starter.ViewModels
             RaisePropertyChanged(() => Time);
         }
 
-        public IMvxCommand NextCommand => new MvxCommand(GoNext);
-        private void GoNext()
+        public IMvxCommand NextCommand => new MvxAsyncCommand(GoNext);
+        private async Task GoNext()
         {
-            navigationService.Navigate<SecondViewModel, string>(text);
+            // With return value
+            var result = await navigationService.Navigate<SecondViewModel, string, string>(text);
+
+            Text += result;
         }
 
         private string text = "Hello MvvmCross !";

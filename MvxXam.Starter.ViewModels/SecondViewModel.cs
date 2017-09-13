@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using MvvmCross.Core.Navigation;
 using MvvmCross.Core.ViewModels;
 
 namespace MvxXam.Starter.ViewModels
@@ -6,7 +7,7 @@ namespace MvxXam.Starter.ViewModels
     /// <summary>
     /// SecondiewModel class
     /// </summary>
-    public class SecondViewModel : MvxViewModel<string>
+    public class SecondViewModel : MvxViewModel<string, string>
     {
         /// <summary>
         /// Main page text
@@ -14,13 +15,35 @@ namespace MvxXam.Starter.ViewModels
         private string text;
 
         /// <summary>
-        /// Initialize view model
+        /// Navigation Service
+        /// </summary>
+        private readonly IMvxNavigationService navigationService;
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="appService"></param>
+        public SecondViewModel(IMvxNavigationService navigationService)
+        {
+            this.navigationService = navigationService;
+        }
+
+        /// <summary>
+        /// Load data here
         /// </summary>
         /// <returns></returns>
-        public override Task Initialize(string parameter)
+        public override Task Initialize()
+        {
+            return base.Initialize();
+        }
+
+        /// <summary>
+        /// Get and save parameters here
+        /// </summary>
+        /// <param name="parameter"></param>
+        public override void Prepare(string parameter)
         {
             text = parameter;
-            return base.Initialize();
         }
 
         #region Bindings tests
@@ -29,7 +52,7 @@ namespace MvxXam.Starter.ViewModels
 
         private void GoBack()
         {
-            Close(this);
+            navigationService.Close(this, "backParam");
         }
 
         public string Title
