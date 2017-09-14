@@ -35,25 +35,25 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Binding, Version=5.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Binding.5.2.0\lib\net45\MvvmCross.Binding.dll</HintPath>
+      <HintPath>..\..\packages\MvvmCross.Binding.5.2.0\lib\net45\MvvmCross.Binding.dll</HintPath>
     </Reference>
     <Reference Include="MvvmCross.Binding.Wpf, Version=5.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Binding.5.2.0\lib\net45\MvvmCross.Binding.Wpf.dll</HintPath>
+      <HintPath>..\..\packages\MvvmCross.Binding.5.2.0\lib\net45\MvvmCross.Binding.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="MvvmCross.Core, Version=5.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Core.5.2.0\lib\net45\MvvmCross.Core.dll</HintPath>
+      <HintPath>..\..\packages\MvvmCross.Core.5.2.0\lib\net45\MvvmCross.Core.dll</HintPath>
     </Reference>
     <Reference Include="MvvmCross.Localization, Version=5.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Binding.5.2.0\lib\net45\MvvmCross.Localization.dll</HintPath>
+      <HintPath>..\..\packages\MvvmCross.Binding.5.2.0\lib\net45\MvvmCross.Localization.dll</HintPath>
     </Reference>
     <Reference Include="MvvmCross.Platform, Version=5.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Platform.5.2.0\lib\net45\MvvmCross.Platform.dll</HintPath>
+      <HintPath>..\..\packages\MvvmCross.Platform.5.2.0\lib\net45\MvvmCross.Platform.dll</HintPath>
     </Reference>
     <Reference Include="MvvmCross.Platform.Wpf, Version=5.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Platform.5.2.0\lib\net45\MvvmCross.Platform.Wpf.dll</HintPath>
+      <HintPath>..\..\packages\MvvmCross.Platform.5.2.0\lib\net45\MvvmCross.Platform.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="MvvmCross.Wpf, Version=5.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Core.5.2.0\lib\net45\MvvmCross.Wpf.dll</HintPath>
+      <HintPath>..\..\packages\MvvmCross.Core.5.2.0\lib\net45\MvvmCross.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -131,13 +131,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MvxXam.Starter.ViewModels\MvxXam.Starter.ViewModels.csproj">
+    <ProjectReference Include="..\..\MvxXam.Starter.ViewModels\MvxXam.Starter.ViewModels.csproj">
       <Project>{df04f9c0-89f1-4867-a9a3-c02bd3222c9c}</Project>
       <Name>MvxXam.Starter.ViewModels</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <SplashScreen Include="Resources\xamagon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

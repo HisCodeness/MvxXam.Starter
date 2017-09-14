@@ -16,7 +16,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvxXam.Starter.ViewModels",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvxXam.Starter.Services", "MvxXam.Starter.Services\MvxXam.Starter.Services.csproj", "{1A21C143-16D8-49A1-8AA8-0ECC4819EF58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvxXam.Starter.App.Wpf", "MvxXam.Starter.App.Wpf\MvxXam.Starter.App.Wpf.csproj", "{DE83BF80-06C2-48F5-B6C8-1C4C6CF6E9B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvxXam.Starter.App.Wpf", "MvxXam.Starter.App\MvxXam.Starter.App.Wpf\MvxXam.Starter.App.Wpf.csproj", "{DE83BF80-06C2-48F5-B6C8-1C4C6CF6E9B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
