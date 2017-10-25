@@ -22,7 +22,7 @@ namespace MvxXam.Starter.App
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            RegisterAppStart<MainViewModel>();
+            RegisterNavigationServiceAppStart<MainViewModel>();
         }
     }
 }
