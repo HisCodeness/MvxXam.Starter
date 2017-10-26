@@ -7,7 +7,7 @@ namespace MvxXam.Starter.ViewModels
     /// <summary>
     /// SecondiewModel class
     /// </summary>
-    public class SecondViewModel : MvxViewModel<string, string>
+    public class SecondViewModel : BaseViewModel<string, string>
     {
         /// <summary>
         /// Main page text
@@ -34,16 +34,8 @@ namespace MvxXam.Starter.ViewModels
         /// <returns></returns>
         public override Task Initialize()
         {
-            return base.Initialize();
-        }
-
-        /// <summary>
-        /// Get and save parameters here
-        /// </summary>
-        /// <param name="parameter"></param>
-        public override void Prepare(string parameter)
-        {
             text = parameter;
+            return base.Initialize();
         }
 
         #region Bindings tests

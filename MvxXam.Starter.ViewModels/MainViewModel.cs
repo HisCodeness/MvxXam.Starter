@@ -8,7 +8,7 @@ namespace MvxXam.Starter.ViewModels
     /// <summary>
     /// MainViewModel class
     /// </summary>
-    public class MainViewModel : MvxViewModel
+    public class MainViewModel : BaseViewModel<MvxNullViewModel, MvxNullViewModel>
     {
         /// <summary>
         /// Test app service
