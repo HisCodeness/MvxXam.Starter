@@ -1,10 +1,10 @@
 # MvxXam.Starter
 Starter kit for native Xamarin app using Mvvmcross  
 
-Current Mvvmcross version : 5.2.0 <p>
-Current Xamarin version : 4.6.0.299
+Current Mvvmcross version : 5.3.2 <p>
+Current Xamarin version : 4.7.10.22
 
-iOS on going...
+iOS is not yet working...
 
 Platforms available : Android, Windows (Wpf & UWP), iOS
 
