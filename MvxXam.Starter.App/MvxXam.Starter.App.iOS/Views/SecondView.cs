@@ -1,10 +1,11 @@
-﻿using Foundation;
-using MvvmCross.iOS.Views;
+﻿using MvvmCross.iOS.Views;
+using MvvmCross.iOS.Views.Presenters.Attributes;
+using MvxXam.Starter.ViewModels;
 using UIKit;
 
 namespace MvxXam.Starter.App.iOS.Views
 {
-    [Register("SecondView")]
+    [MvxChildPresentation(Animated = true, ViewModelType = typeof(SecondViewModel))]
     public class SecondView : MvxViewController
     {
         /// <summary>
@@ -19,7 +20,7 @@ namespace MvxXam.Starter.App.iOS.Views
         /// Constructor
         /// </summary>
         public SecondView()
-            : base(UserInterfaceIdiomIsPhone ? "SecondView_iPhone" : "SecondView_iPad", null)
+            : base("SecondView", null)
         {
         }
 

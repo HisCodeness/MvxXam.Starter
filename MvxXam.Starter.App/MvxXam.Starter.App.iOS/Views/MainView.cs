@@ -1,11 +1,12 @@
-﻿using Foundation;
-using MvvmCross.iOS.Views;
+﻿using MvvmCross.iOS.Views;
+using MvvmCross.iOS.Views.Presenters.Attributes;
+using MvxXam.Starter.ViewModels;
 using UIKit;
 
 namespace MvxXam.Starter.App.iOS.Views
 {
-    [Register("MainView")]
-    public class MainView : MvxViewController
+    [MvxRootPresentation(ViewModelType = typeof(MainViewModel), WrapInNavigationController = true)]
+    public partial class MainView : MvxViewController
     {
         /// <summary>
         /// Indicates if interface is iPhone
@@ -19,7 +20,7 @@ namespace MvxXam.Starter.App.iOS.Views
         /// Constructor
         /// </summary>
         public MainView()
-            : base(UserInterfaceIdiomIsPhone ? "MainView_iPhone" : "MainView_iPad", null)
+            : base("MainView", null)
         {
         }
 
